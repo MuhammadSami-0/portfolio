@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root{
+    --primary: #17f; 
+    --secondary: #fff;
+    --font:'Poppins', sans-serif; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font); /* Apply font variable */
+}
+header {
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin-right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 10000;
+    background-color: #262626;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+header .logo {
+    position: relative;
+    text-decoration: none;
+    color: var(--secondary); /* Apply secondary color */
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 2em;
+    font-family: var(--font); /* Apply font variable */
+}
+
+.logo .span {
+    color: var(--primary);
+    font-family: var(--font); /* Apply font variable */
+}
+
+header ul {
+    display: flex;
+    gap: 70px;
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+header ul li:hover {
+    transform: scale(1.15);
+}
+
+header ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondary); /* Apply secondary color */
+    font-weight: 500;
+    font-size: 1.27rem;
+}
+
+header ul li:hover a {
+    transition: 0.4s;
+    color: var(--primary);
+}
+
+header ul li.active a {
+    color: var(--primary);
+    font-size: 1.2rem;
+    transform: none;
+}
+
+header .nav-element::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s, left 0.3s;
+}
+
+header a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+header .btn:hover {
+    box-shadow: 0px 0px -15px -15px;
+    background-color: var(--secondary); /* Apply secondary color */
+    color: var(--primary);
+    transform: scale(1.2);
+}
+
+@keyframes fadeinright {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeinleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeinup {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px #3498db;
+    }
+
+    50% {
+        box-shadow: 0 0 40px #3498db;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #3498db;
+    }
+}
+@keyframes morph {
+    0% {
+			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+			background: linear-gradient(45deg, #88D5BF 0%, #5D6BF8 100%);
+	} 
+	
+	50% {
+			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+			background: linear-gradient(45deg, #88D5BF 0%, #5D6BF8 100%);
+	}
+  
+	100% {
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+		background: linear-gradient(45deg,#88D5BF 0%,#5D6BF8 100%);
+	} 
+}
+@keyframes line{
+    0%{
+        width:0%
+    }
+    40%{
+        width:width; left:initial, right 0;
+    }
+}
+@keyframes textcolor {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}

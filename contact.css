@@ -1,0 +1,206 @@
+@import url(config.css);
+
+#contact 
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: #0c0c0c;
+}
+#contact::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background: linear-gradient(#000,var(--primary),#000);
+  animation: animate 5s linear infinite;
+}
+#contact span{
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: #181818;
+    z-index: 2;
+    transition: 1.5s;
+}
+#contact span:hover{
+  background: var(--primary);
+  transition: 0s;
+}
+
+#contact .box-form{
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 500px;
+    position: absolute;
+    color: var(--secondary);
+    background-color: #191919;
+    z-index: 1000;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#contact .querry{
+    display: flex;
+    justify-content: center; 
+    font-size:25px ; 
+
+}
+#contact h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+#contact .input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 3em;
+    padding: 25px 10px 7.5px;
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+#contact .input-box input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 3em;
+    width: 25rem;
+    padding: 7px;
+    color: #101010;
+    border-radius: 8px;
+}
+#contact .input-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 5rem;
+    padding: 1rem 0.5rem;;
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 15px;
+}
+#contact .input-box2 input{
+    position: relative;
+    height: 7em;
+    width:25rem;
+    font-size: 15px;
+    padding: 7px;
+    color: #101010;
+    border-radius: 5px;
+}
+#contact .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+#contact .btn input{
+    padding: 18px 45px;
+    border-radius: 35px;
+    background: var(--primary);
+    color: var(--secondary);
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+#contact .btn input:hover{
+    color: var(--secondary);
+    background: transparent;
+    border: 2px solid var(--primary);
+}
+
+@media (max-width: 900px)
+{
+  #contact2 span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  #contact2 span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+/* footer{
+    position:relative;
+    top: 43rem;
+    width: 100vw;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: poppins;
+    transition: 0.4s;
+}
+footer p:nth-child(1):hover{
+    color: var(--primary);
+}
+footer p:nth-child(2){
+    color: var(--secondary);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+    font-family: poppins;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.social a:hover{
+    transform: scale(1.2);
+}
+.end{
+    position: absolute;
+    color: var(--primary);
+    bottom: 35px;
+    font-size: 14px;
+} */

@@ -1,0 +1,173 @@
+@import url(config.css);
+#skills{
+    background: #242424;
+    width: auto;
+    height: 800px;
+    padding-top: 6rem;
+    transition: 0.5s;
+}
+#skills:hover{
+    box-shadow: rgb(32, 30, 30) 0px 20px 40px -18px inset, rgb(32, 30, 30) 0px 18px 40px -18px inset;
+}
+.skill{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right ,#00affa, #3d8cda,#3782ba );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textcolor 2s ease-in-out infinite alternate;
+}
+
+.container1 {
+    display: flex;
+    max-width: 75rem;
+    margin: 20px auto;
+    gap: 2rem;
+
+}
+.container2 {
+    display: flex;
+    max-width: 75rem;
+    margin: 20px auto;
+    gap: 2rem;
+
+}
+.container3 {
+    display: flex;
+    max-width: 75rem;
+    margin: 20px auto;
+    gap: 2rem;
+
+}
+p{
+    color: white;
+}
+.box1, .box3, .box5 {
+    position: relative;
+    display: flex;
+    width: 50rem;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 6px 20px;
+    border-radius: 18px;
+    transition: 1s;
+    font-size: 17px;
+    cursor: default;
+    animation: fadeinleft 2s ease-in-out;
+}
+.box2, .box4, .box6 {
+    position: relative;
+    display: flex;
+    width: 50rem;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 6px 20px;
+    border-radius: 18px;
+    transition: 1s;
+    font-size: 17px;
+    cursor: default;
+    animation: fadeinright 2s ease-in-out;
+}
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+    transform: scale(1.03);
+}
+.box1 .wordpress::before,
+.box2 .html::before,
+.box3 .critical::before,
+.box4 .adapt::before,
+.box5 .creativity::before,
+.box6 .problem::before {
+    height: 5px;
+    width: 92%;
+    position: absolute;
+    content: " ";
+    background: grey;
+    top: 60px;
+    left: 18px;
+    border-radius: 35px;
+}
+.box1 .wordpress::after,
+.box2 .html::after,
+.box3 .critical::after,
+.box4 .adapt::after,
+.box5 .creativity::after,
+.box6 .problem::after {
+    height: 5px;
+    position: absolute;
+    content: " ";
+    background: #17f;
+    box-shadow: 0 0 6px #17f;
+    top: 60px;
+    left: 18px;
+    border-radius: 35px;
+    animation: line 3s forwards;
+}
+
+.box1 .wordpress::after { width: 78.65%; }
+.box2 .html::after { width: 55.6%; }
+.box3 .critical::after { width: 72.08%; }
+.box4 .adapt::after { width: 69.25%; }
+.box5 .creativity::after { width: 73.8%; }
+.box6 .problem::after { width: 64.7%; }
+
+.numbershow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8rem;
+    animation: fadeinup 1s ease-in-out;
+    transition: 0.4s;
+}
+
+.boxA, .boxB, .boxC, .boxD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    border: 3px solid var(--primary);
+    padding: 18px;
+    gap: 15px;
+    transition: 0.5s;
+    border-radius: 18px;
+}
+.boxA:hover, .boxB:hover, .boxC:hover, .boxD:hover {
+    box-shadow: var(--primary) 0px 0px 16px;
+}
+
+.number, .infinite {
+    color:var(--primary);
+    box-shadow: none;
+    animation: fadeinup 1s ease-in-out;
+}
+
+.number {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infinite {
+    font-size: 2rem;
+    margin-top: 12px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: none;
+}

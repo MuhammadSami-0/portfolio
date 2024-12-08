@@ -1,0 +1,152 @@
+@import url(config.css);
+
+html {
+    background-color: #1d1d1d;
+}
+
+#service {
+    background-color: #1d1c1c;;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: var(--secondary);
+    font-size: 60px;
+    width: 1130px;
+    margin: 25px auto;
+    text-align: center;
+    animation: fadeinup 1s ease-in-out;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    flex-wrap: wrap;  /* This allows the cards to stack on smaller screens */
+    gap: 20px; /* Adds space between the cards */
+}
+
+.card {
+    height: 400px;
+    width: 350px;
+    padding: 13px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    border: 3px solid var(--primary);
+    overflow: hidden;
+    transition: 0.5s;
+    animation: fadeinup 1s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: var(--primary) 0px 0px 16px;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 23px 0px;
+    color: #87CEFA;
+}
+
+h5 {
+    color: var(--primary);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.para p {
+    color: var(--secondary);
+    font-size: clamp(12px, 2.5vw, 18px);
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .title h2 {
+        font-size: 50px; /* Adjusts font size for tablets */
+    }
+
+    .box {
+        flex-direction: row; /* Keeps items in a row on medium-sized screens */
+        justify-content: space-evenly; /* Adjusts spacing between the cards */
+        height: auto; /* Allows height to adjust for smaller screen sizes */
+    }
+
+    .card {
+        width: 300px; /* Adjusts card width for smaller screens */
+        height: 350px; /* Slightly reduce height */
+    }
+}
+
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 40px; /* Smaller font size on smaller devices */
+    }
+
+    .box {
+        flex-direction: column; /* Stacks the cards vertically */
+        align-items: center; /* Centers the cards */
+        gap: 30px; /* Adds space between cards */
+        padding: 20px; /* Adds space around the box */
+        height: auto; /* Allows height to adjust for smaller screen sizes */
+    }
+
+    .card {
+        width: 90%; /* Makes cards take up most of the screen width */
+        height: 300px; /* Adjusts height to fit better */
+    }
+}
+
+@media (max-width: 480px) {
+    .title h2 {
+        font-size: 30px; /* Even smaller font size on mobile devices */
+    }
+
+    .box {
+        flex-direction: column; /* Stacks cards in a column for small screens */
+        align-items: center; /* Centers the cards */
+        padding: 15px; /* Adjusts padding for mobile devices */
+        gap: 20px; /* Adds space between cards */
+    }
+
+    .card {
+        width: 100%; /* Full width for mobile screens */
+        height: 250px; /* Adjusts the card height */
+        margin: 10px 0; /* Reduces margin between cards */
+    }
+
+    .card i {
+        font-size: 40px; /* Adjusts icon size for mobile devices */
+    }
+
+    h5 {
+        font-size: 20px; /* Adjusts text size for mobile devices */
+    }
+
+    .para p {
+        font-size: 14px; /* Smaller text on mobile */
+    }
+}

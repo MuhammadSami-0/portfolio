@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url(config.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font); /* Apply font variable */
+    color: var(--secondary); /* Apply secondary color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin-right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 10000;
+    background-color: #262626;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+header .logo {
+    position: relative;
+    text-decoration: none;
+    color: var(--secondary); /* Apply secondary color */
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 2em;
+    font-family: var(--font); /* Apply font variable */
+}
+
+.logo .span {
+    color: var(--primary);
+    font-family: var(--font); /* Apply font variable */
+}
+
+header ul {
+    display: flex;
+    gap: 70px;
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+header ul li:hover {
+    transform: scale(1.15);
+}
+
+header ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondary); /* Apply secondary color */
+    font-weight: 500;
+    font-size: 1.27rem;
+}
+
+header ul li:hover a {
+    transition: 0.4s;
+    color: var(--primary);
+}
+
+header ul li.active a {
+    color: var(--primary);
+    font-size: 1.2rem;
+    transform: none;
+}
+
+header .nav-element::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s, left 0.3s;
+}
+
+header a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+header .btn:hover {
+    box-shadow: 0px 0px -15px -15px;
+    background-color: var(--secondary); /* Apply secondary color */
+    color: var(--primary);
+    transform: scale(1.2);
+}
+
+#home {
+    display: flex;
+    width: 100vw;
+    background: #262626;
+}
+
+#home .container {
+    display: flex;
+    height: 100vh;
+}
+
+#home .shape {
+    position: relative;
+    left: 21.5rem;
+    top: 30%;
+    background: linear-gradient(45deg, #88D5BF 0%, #5D6BF8 100%);
+    animation: morph 4s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 300px;
+    transition: all 2s ease-in-out;
+    width: 300px;
+    z-index: 5;
+}
+
+.profile {
+    position: absolute;
+    height: 270px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 32%;
+    left: 23.5rem;
+    z-index: 100;
+}
+
+.content1 .name {
+    position: absolute;
+    font-family: bookman old style;
+    color: var(--primary);
+    font-size: 1.5em;
+    top: 40.5%;
+    left: 54rem;
+    padding: 0px;
+    text-transform: uppercase;
+    animation: fadeinup 1s ease-in-out;
+}
+
+.content1 .sami {
+    position: absolute;
+    top: 46%;
+    left: 54rem;
+    color: var(--secondary); /*Apply secondary color*/
+    font-family: museo slab;
+    font-size: 2.9em;
+    font-weight: 600;
+    padding-bottom: 5px;
+    animation: fadeinup 1.3s ease-in-out;
+}
+
+.content1 .developer {
+    position: absolute;
+    font-family: bookman old style;
+    color: var(--primary);
+    font-size: 1.5em;
+    top: 56%;
+    left: 54rem;
+    padding: 0px;
+    text-transform: uppercase;
+    animation: fadeinup 1.5s ease-in-out;
+}
+
+
+#home .btn {
+    color: var(--secondary); /* Apply secondary color */
+    font-weight: 600;
+    padding: 12px 18px;
+    font-size: 15px;
+    border-radius: 45px;
+    border: none;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+#home .btn:hover {
+    box-shadow: 0px 0px -15px -15px;
+    background-color: var(--secondary); /* Apply secondary color */
+    color: var(--primary);
+}
+

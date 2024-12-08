@@ -1,0 +1,123 @@
+@import url(config.css);
+
+#about {
+    width: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: #191919;
+    height: auto;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.about-img {
+    height: 430px;
+    width: auto;
+    border-radius: 20px;
+    animation: fadeinleft 1s ease-in-out;
+}
+
+.about-text {
+    width: 550px;
+    font-family: var(--font); /* Apply font variable */
+    animation: fadeinup 1s ease-in-out;
+}
+
+.about-text h2 {
+    color: var(--secondary); /* Apply secondary color */
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: var(--secondary); /* Apply secondary color */
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.span1 {
+    color: var(--primary);
+    font-family: var(--font); /* Apply font variable */
+}
+
+.about-text p {
+    color: var(--secondary); /* Apply secondary color */
+    letter-spacing: 1px;
+    line-height: 23px;
+    font-size: 17px;
+    margin-bottom: 45px;
+    text-decoration: none;
+}
+
+.button {
+    background-color: var(--primary);
+    color: var(--secondary); /* Apply secondary color */
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        height: auto;
+        max-width: 80%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 45px;
+    }
+
+    .about-text h5 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h2 {
+        font-size: 35px;
+    }
+
+    .about-text h5 {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+}
